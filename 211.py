@@ -128,7 +128,7 @@ class Report:
         for i, widths_col in enumerate(widths_col, 1):
             ws1.column_dimensions[get_column_letter(i)].width = widths_col + 2
 
-        data = [['Город', 'Уровень зарплат', '', 'Город', 'Доля вакансий']]
+        data = [['Страна', 'Уровень зарплат', '', 'Город', 'Доля вакансий']]
 
         for (first_city, first_value), (second_city, second_value) in zip(self.stats_5.items(), self.stats_6.items()):
             data.append([first_city, first_value, '', second_city, second_value])
